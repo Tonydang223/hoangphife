@@ -2,7 +2,7 @@ import React from "react";
 import { Modal, Carousel, Button, InputNumber, Table, Form, Input } from "antd";
 
 export default function Details() {
-  const [slides, setslides] = React.useState([
+  const [slides] = React.useState([
     "https://res.cloudinary.com/hdprivatecloud/image/upload/v1705575283/course/abga_xmpfsw.jpg",
     "https://res.cloudinary.com/hdprivatecloud/image/upload/v1702974634/posts/anhbg_an0lkt.jpg",
     "https://res.cloudinary.com/hdprivatecloud/image/upload/v1702435383/editors/1-Interesting-Facts-about-Big-Ben-04_800x534_edspcj.jpg",
@@ -130,7 +130,7 @@ export default function Details() {
 
         <h3>Thông số kĩ thuật</h3>
         <div className="desc">
-           <p>Thông số kĩ thuật đây</p>
+          <p>Thông số kĩ thuật đây</p>
         </div>
 
         <Modal
@@ -163,7 +163,7 @@ export default function Details() {
               content: "",
             }}
             layout="vertical"
-            style={{marginTop: "20px", width: '70%'}}
+            style={{ marginTop: "20px", width: "70%" }}
             onFinish={onFinish}
             autoComplete="off"
           >
@@ -177,7 +177,7 @@ export default function Details() {
                 },
               ]}
             >
-              <Input placeholder="Nguyen An"/>
+              <Input placeholder="Nguyen An" />
             </Form.Item>
 
             <Form.Item
@@ -190,7 +190,7 @@ export default function Details() {
                 },
               ]}
             >
-              <Input type="number" placeholder="0908789789"/>
+              <Input type="number" placeholder="0908789789" />
             </Form.Item>
             <Form.Item
               label="Email"
@@ -202,13 +202,13 @@ export default function Details() {
                 },
               ]}
             >
-              <Input placeholder="A@gmail.com"/>
+              <Input placeholder="A@gmail.com" />
             </Form.Item>
-            <Form.Item
-              label="Nội dung ghi chú thêm"
-              name="content"
-            >
-              <Input.TextArea style={{height: '150px'}} placeholder="Nội dung cần ghi chú"/>
+            <Form.Item label="Nội dung ghi chú thêm" name="content">
+              <Input.TextArea
+                style={{ height: "150px" }}
+                placeholder="Nội dung cần ghi chú"
+              />
             </Form.Item>
 
             <Form.Item>

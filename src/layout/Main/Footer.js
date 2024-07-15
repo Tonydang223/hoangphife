@@ -52,19 +52,19 @@ export default function Footer() {
           <h3>Về chúng tôi</h3>
           <ul>
             <li>
-              <a href="#">Trang chủ</a>
+              <a href="hompage" alt="lll">Trang chủ</a>
             </li>
             <li>
-              <a href="#">Về chúng tôi</a>
+              <a href="intro">Về chúng tôi</a>
             </li>
             <li>
-              <a href="#">Sản phẩm</a>
+              <a href="product">Sản phẩm</a>
             </li>
             <li>
-              <a href="#">Tin tức</a>
+              <a href="blog">Tin tức</a>
             </li>
             <li>
-              <a href="#">Liên hệ</a>
+              <a href="contact">Liên hệ</a>
             </li>
           </ul>
         </li>

@@ -112,7 +112,7 @@ export default function MainBlog() {
             <div className="blog_moreLeft_content">
               {blogs.slice(0, 4).map((i) => (
                 <div className="box_blogsm" key={i._id}>
-                  <img src={i.img} />
+                  <img src={i.img} alt="lll"/>
                   <h5>{i.title}</h5>
                 </div>
               ))}
