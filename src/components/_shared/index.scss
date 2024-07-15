@@ -1,0 +1,84 @@
+// left menu product 
+.wraplmp {
+    li:nth-child(n+2) {
+        margin-top: 18px;
+    }
+    li {
+        ul {
+            padding-left: 19px;
+            border-top: 0;
+            border-bottom: 1px solid rgba(127, 127, 127, 0.16);
+            border-left: 1px solid rgba(127, 127, 127, 0.16);
+            border-right: 1px solid rgba(127, 127, 127, 0.16);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            li {
+                span:nth-child(1) {
+                    font-size: 13px;
+                    color: rgb(112, 112, 112);
+                }
+                span:nth-child(2) {
+                    margin-left: 8px;
+                }
+            }
+            li:hover {
+                color: #0669c4;
+                transition: all 0.2s ease-in;
+                span:nth-child(1) {
+                    color: #0669c4;
+                }
+            }
+        }
+        > div {
+            border-bottom: 1.6px solid #0669c4;
+            overflow: hidden;
+        }
+        h3 {
+            font-size: 18px;
+            width: 260px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin: 0;
+            text-transform: uppercase;
+            padding-left: 12px;
+            background: #03396c;
+            position: relative;
+            line-height: 36px;
+            padding-left: 15px;
+            border-bottom: 0.8px solid #0669c4;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        h3::before {
+            width: 13px;
+            content: "";
+            right: 33px;
+            position: absolute;
+            z-index: 9;
+            top: -5px;
+            box-sizing: border-box;
+            height: 50px;
+            background: #fff;
+            transform: rotate(24deg);
+        }
+        h3::after {
+            border-left: 54px solid #03396c !important;
+            border-top: 37.5px solid transparent;
+            content: "";
+            right: -53px;
+            position: absolute;
+            z-index: 9;
+            top: 0px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+//box product sm 
+.wrapSMBoxPr {
+    height: 250px;
+    border-radius: 5px;
+    border: 1px solid rgba(127, 127, 127, 0.16);
+}

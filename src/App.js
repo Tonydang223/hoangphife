@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { Route, Routes } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import Main from "./layout/Main/Main";
+import HomePage from "./pages/Homepage";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Blog from "./pages/Blog";
+import MainBlog from "./pages/Blog/Main";
+import Contact from "./pages/Contact"
+import ProductDetail from "./pages/Product/Details"
+import Product from "./pages/Product"
+import MainProduct from "./pages/Product/Main"
+import Intro from "./pages/Intro"
+import BlogDetail from "./pages/Blog/Details";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Main />}>
+        <Route index element={<HomePage />} />
+        <Route path="blog" element={<Blog />}>
+          <Route index element={<MainBlog />} />
+          <Route path="detail/:idBlog" element={<BlogDetail />} />
+        </Route>
+        <Route path="product" element={<Product />} >
+          <Route index element={<MainProduct />} />
+          <Route path="detail/:idProduct" element={<ProductDetail />}/>
+        </Route>
+
+
+        <Route path="contact" element={<Contact />} />
+        <Route path="intro" element={<Intro />} />
+      </Route>
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

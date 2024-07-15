@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+.wrapProduct {
+    margin-bottom: 55px;
+
+    .main-l {
+        >div {
+            .wrapinp {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .wrapinp1 {
+                    .ant-input-wrapper {
+                        >input {
+                            border-right: none;
+                        }
+
+                        .ant-input:hover {
+                            border-color: #d9d9d9;
+                            box-shadow: none;
+                        }
+                        .ant-input:focus-within {
+                            border-color: #d9d9d9;
+                            box-shadow: none;
+                        }
+
+
+
+                        .ant-input-group-addon {
+                            background: transparent;
+
+                            .ant-btn-primary {
+                                background: transparent;
+                                color: #000;
+                                border-top: 1px solid #d9d9d9;
+                                border-right: 1px solid #d9d9d9;
+                                border-bottom: 1px solid #d9d9d9;
+                                >div {
+                                    display: none;
+                                }
+                            }
+                            
+                        }
+
+                    }
+                }
+
+                .wrapinp2 {
+                    button {
+                        padding: 5px 14px;
+                        width: 160px;
+                        height: 34px;
+
+                        .ant-space {
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+
+                            .ant-space-item:nth-child(2) {
+                                display: flex;
+                            }
+                        }
+                    }
+
+                    button:hover {
+                        color: #000;
+                        border-color: #d9d9d9;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+.wrapDel {
+    > h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 24px;
+    }
+
+    .slideImg {
+        > img {
+            height: 320px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .acSli {
+            display: flex;
+            margin-top: 14px;
+            > div {
+                width: 23.999999%;
+                padding: 7px;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 2px solid transparent;
+                img {
+                    height: 100%;
+                }
+            }
+            .active {
+                border: 2px solid #03396c;
+                transition: all 0.6s ease-in-out;
+            }
+
+        }
+
+    }
+    .info {
+        > h1 {
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 24px;
+            margin-top: 10px;
+            margin-bottom: 7px;
+        }
+
+        > h5{
+            font-family: "Changa One", sans-serif;
+            color: #03396c;
+            font-size: 40px;
+            margin: 9px 0;
+            span {
+                font-size: 16px; 
+                font-family: "Nunito", sans-serif;           
+            }
+
+        }
+         > p {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 9px 0;
+         }
+
+         .box-w {
+            border: 2px dashed #d9d9d9;
+            border-radius: 5px;
+            .box-w-f {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                p {
+                    text-align: left;
+                    font-size: 16px;
+                    width: 20%;
+                    margin: 5px 0;
+                    span:nth-child(1) {
+                        font-weight: 300;
+                    }
+                    .bl {
+                        font-weight: 700;
+                        margin-top: 3px;
+                    }
+                }
+                p:nth-child(2) {
+                    width: 40%;
+                }
+
+            }
+         }
+    }
+
+    > .countw {
+        display: flex;
+        margin-top: 15px;
+        > div {
+            border: 1px solid #ddd;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+        }
+        div:nth-child(2) {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        div:nth-child(1),
+        div:nth-child(3)
+        {
+            cursor: pointer;
+        }
+        div:nth-child(n+2) {
+            margin-left: 15px;
+        }
+    }
+    .out-p {
+        font-size: 15px;
+        font-weight: 700;
+        color: #333;
+    }
+    .ant-input-number {
+        display: block;
+        margin-top: 15px;
+    }
+    > .ant-btn {
+        background-color: #03396c;
+        color: #fff;
+        padding: 14px 45px;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 47px;
+        margin-top: 15px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    h3 {
+        font-weight: 800;
+        margin-top: 25px;
+    }
+
+
+
+    img {
+        width: 100%;
+    }
+    .ant-modal {
+        width: 55% !important;
+    }
+}
